@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/9c774658-2924-4902-8fba-6ca8a8af806d)# Partitioning
+# Partitioning
 ## What is partition?
 * Data partition refers to the process of dividing a dataset into smaller, more manageable pieces or chunks called _**partitions/sharding**_.
 * Having multiple copy of data on different nodes _replication_ is not sufficient, for very large datasets or very high query throughput.
