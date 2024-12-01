@@ -13,14 +13,10 @@
   * However, _partitioning_ is the most established term, so we’ll stick with that.
 ## Different approaches to partitioning large dataset.
 Say you have a large amount of data, and you want to partition it. How do you decide which records to store on which nodes?
-### Partitioning of key value data.
-### Partitioning by key range.
-### Partitioning by hash of key.
-## Rebalancing Partitions.
-* 
+#### Partitioning of key value data.
+#### Partitioning by key range.
+#### Partitioning by hash of key.
 
-## How indexing of data interact with partition.
-## Partitioning and secondary indexing.
 ## How database routes request to right partition.
 On a high level there are few approaches.
 * Client can contact any node in the cluster, if that cluster has the data it serves otherwise it routes the request to next node and return the data.
@@ -35,4 +31,7 @@ On a high level there are few approaches.
 * Other actors, such as the routing tier or the partitioning-aware client, can subscribe to this information in ZooKeeper.
 * Whenever a partition changes ownership, or a node is added or removed, ZooKeeper notifies the routing tier so that it can keep its routing information up to date.
 ![image](https://github.com/user-attachments/assets/2ed9b265-f438-45c8-a9b2-5ba5a01e78d7)
+## Rebalancing Partitions.
+## How indexing of data interact with partition.
+## Partitioning and secondary indexing.
 
